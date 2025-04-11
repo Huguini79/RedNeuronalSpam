@@ -16,9 +16,9 @@ vector<string> cargos_posibles_dominios;
 float peso = 0.1;
 float lr = 0.01;
 float porcentaje_completo;
-float sesgo_compras = -4.0;
+float sesgo_compras = -1.0;
 float sesgo_ofertas = -1.0;
-float sesgo_cargos = 0.0;
+float sesgo_cargos = -1.0;
 float salidaEsperada = 0;
 
 string categoria;
