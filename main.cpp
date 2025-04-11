@@ -4,7 +4,6 @@
 
 #include<iostream>
 #include<cmath>
-#include<cstdlib>
 #include<string>
 #include<vector>
 
@@ -20,7 +19,7 @@ float porcentaje_completo;
 float sesgo_compras = -4.0;
 float sesgo_ofertas = -1.0;
 float sesgo_cargos = 0.0;
-float salidaEsperada;
+float salidaEsperada = 0;
 
 string categoria;
 string dominio;
@@ -85,8 +84,6 @@ int main() {
     cin >> dominio;
     cout << "Introduce la longitud del mensaje:" << endl;
     cin >> longitud_mensaje;
-    cout << "¿Tú crees que este mensaje es spam? (1 = Sí, 0 = No):" << endl;
-    cin >> salidaEsperada;
     if(categoria == "Compras") {
         for(auto a_compras : compras_posibles_dominios) {
             if(dominio == a_compras) {
